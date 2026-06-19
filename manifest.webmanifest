@@ -1,0 +1,16 @@
+{
+  "name": "理事会運営ポータル",
+  "short_name": "理事会ポータル",
+  "description": "アソシアテラス筑紫野管理組合 第13期 理事会運営ポータル",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1c140e",
+  "theme_color": "#2b211a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

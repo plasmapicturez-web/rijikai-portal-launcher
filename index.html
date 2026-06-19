@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>理事会運営ポータル</title>
+
+<!-- ▼▼▼ ここだけ確認：自分のWebアプリURL（末尾 /exec）に必ず書き換える ▼▼▼ -->
+<script>
+  var APP_URL = "https://script.google.com/macros/s/AKfycbzCdamCvBWXd177j0ilktnmn_eCHKQ4l_XsHWWm4Tn_gHzgn5qjU_kVM2A50EakpKzIbw/exec";
+</script>
+<!-- ▲▲▲ ここだけ確認 ▲▲▲ -->
+
+<!-- ホーム画面アイコン（建物） -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<meta name="theme-color" content="#2b211a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="理事会ポータル">
+<meta name="mobile-web-app-capable" content="yes">
+
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    min-height:100dvh;gap:18px;text-align:center;
+    background:radial-gradient(120% 120% at 50% 18%,#3d2e20,#1c140e 70%);
+    color:#f3e9d6;font-family:'Hiragino Kaku Gothic ProN',Meiryo,system-ui,sans-serif;
+    padding:24px}
+  img.logo{width:118px;height:118px;border-radius:26px;box-shadow:0 14px 40px rgba(0,0,0,.55);
+    border:1px solid rgba(176,141,79,.5)}
+  .eyebrow{font-size:11px;letter-spacing:.24em;color:#b08d4f}
+  h1{margin:0;font-size:21px;font-weight:600;letter-spacing:.06em;
+    font-family:'Yu Mincho','Shippori Mincho',serif}
+  .org{font-size:12px;color:#b08d4f;letter-spacing:.04em}
+  .open{margin-top:6px;background:linear-gradient(135deg,#b08d4f,#8c6c34);color:#fff;border:0;
+    border-radius:11px;padding:14px 34px;font-size:16px;font-weight:700;letter-spacing:.06em;
+    cursor:pointer;box-shadow:0 8px 24px rgba(140,108,52,.4);text-decoration:none}
+  .note{font-size:11.5px;color:#a99879;line-height:1.7;max-width:320px;margin-top:4px}
+  .spin{width:18px;height:18px;border:2px solid rgba(243,233,214,.4);border-top-color:#f3e9d6;
+    border-radius:50%;animation:sp .8s linear infinite;display:inline-block;vertical-align:-3px;margin-right:7px}
+  @keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+  <img class="logo" src="icons/icon-512.png" alt="理事会運営ポータル">
+  <div class="eyebrow">ASSOCIA TERRACE CHIKUSHINO</div>
+  <h1>理事会運営ポータル</h1>
+  <div class="org">アソシアテラス筑紫野管理組合　第13期</div>
+  <a class="open" id="openBtn" href="#"><span class="spin"></span>アプリを開いています…</a>
+  <div class="note">自動で開かない場合は上のボタンを押してください。<br>
+    ホーム画面に追加するときは、<b>開く前に</b>ブラウザのメニューから「ホーム画面に追加」を選んでください。</div>
+
+<script>
+  (function(){
+    var btn = document.getElementById('openBtn');
+    btn.setAttribute('href', APP_URL);
+    btn.addEventListener('click', function(e){ e.preventDefault(); location.href = APP_URL; });
+    // 2.4秒後に自動でアプリへ（ホーム追加の操作時間を少し確保）
+    setTimeout(function(){ location.href = APP_URL; }, 2400);
+  })();
+</script>
+</body>
+</html>
