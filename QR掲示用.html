@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>理事会運営ポータル QRポスター</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#efeae0;font-family:'Hiragino Kaku Gothic ProN',Meiryo,sans-serif;color:#2b211a;
+    display:flex;justify-content:center;padding:24px}
+  .sheet{background:#fffdf9;width:760px;max-width:100%;border:1px solid #e3d2ab;border-radius:18px;
+    padding:44px 40px 40px;text-align:center;box-shadow:0 12px 40px rgba(60,40,20,.12)}
+  .eyebrow{font-family:'Yu Mincho','Shippori Mincho',serif;color:#b08d4f;font-size:14px;letter-spacing:.24em}
+  h1{font-family:'Yu Mincho','Shippori Mincho',serif;font-size:34px;letter-spacing:.08em;margin:8px 0 2px;color:#2b211a}
+  .org{color:#8c6c34;font-size:15px;letter-spacing:.04em;margin-bottom:26px}
+  .logo{width:96px;height:96px;border-radius:20px;border:1px solid rgba(176,141,79,.5);box-shadow:0 8px 22px rgba(0,0,0,.18);margin-bottom:18px}
+  .lead{font-size:19px;font-weight:700;margin:6px 0 4px}
+  .sub{font-size:14px;color:#6b5a3f;margin-bottom:20px}
+  .qrbox{display:inline-block;background:#fff;border:1px solid #e3d2ab;border-radius:16px;padding:20px}
+  .qrbox img{width:320px;height:320px;display:block}
+  .steps{margin:26px auto 0;max-width:520px;text-align:left;font-size:14.5px;line-height:1.9;color:#3a322a}
+  .steps b{color:#8c6c34}
+  .url{margin-top:18px;font-size:12px;color:#8c7d68;word-break:break-all}
+  .foot{margin-top:18px;font-size:11px;color:#a99879}
+  .print{position:fixed;top:16px;right:16px}
+  .print button{background:linear-gradient(135deg,#b08d4f,#8c6c34);color:#fff;border:0;border-radius:9px;padding:11px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(140,108,52,.4)}
+  @media print{ body{background:#fff;padding:0} .sheet{box-shadow:none;border:0} .print{display:none} }
+</style>
+</head>
+<body>
+  <div class="print"><button onclick="window.print()">🖨 印刷 / PDF保存</button></div>
+  <div class="sheet">
+    <img class="logo" src="icons/icon-512.png" alt="">
+    <div class="eyebrow">ASSOCIA TERRACE CHIKUSHINO</div>
+    <h1>理事会運営ポータル</h1>
+    <div class="org">アソシアテラス筑紫野管理組合</div>
+
+    <div class="lead">📱 スマホのカメラで読み取ってください</div>
+    <div class="sub">案件の進捗・管理人さんへの依頼・お知らせを確認できます</div>
+
+    <div class="qrbox"><img src="QRコード.png" alt="QRコード"></div>
+
+    <div class="steps">
+      <div><b>① </b>スマホの<b>カメラ</b>を起動し、上のQRコードに向ける</div>
+      <div><b>② </b>表示されたリンクをタップ → ログイン画面へ</div>
+      <div><b>③ </b>（おすすめ）ブラウザのメニューから<b>「ホーム画面に追加」</b>すると、<b>アプリのように</b>ワンタップで開けます</div>
+    </div>
+
+    <div class="url">https://plasmapicturez-web.github.io/rijikai-portal-launcher/</div>
+    <div class="foot">※ログインには配布されたPIN（暗証番号）が必要です。</div>
+  </div>
+</body>
+</html>
